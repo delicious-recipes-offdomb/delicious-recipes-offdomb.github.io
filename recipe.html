@@ -13,6 +13,14 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "name": "Пирог с яблоками",
+      "image": [
+        "https://your-site.com/img/recipe1.jpg",
+        "https://your-site.com/img/step1.jpg",
+        "https://your-site.com/img/step2.jpg",
+        "https://your-site.com/img/step3.jpg",
+        "https://your-site.com/img/step4.jpg",
+        "https://your-site.com/img/step5.jpg"
+      ],
       "author": {
         "@type": "Person",
         "name": "Вкусные Рецепты"
@@ -42,23 +50,33 @@
       "recipeInstructions": [
         {
           "@type": "HowToStep",
-          "text": "Разогрейте духовку до 180°C."
+          "name": "Разогрейте духовку",
+          "text": "Разогрейте духовку до 180°C.",
+          "image": "https://your-site.com/img/step1.jpg"
         },
         {
           "@type": "HowToStep",
-          "text": "Смешайте муку, сахар, разрыхлитель и корицу в миске."
+          "name": "Смешайте сухие ингредиенты",
+          "text": "Смешайте муку, сахар, разрыхлитель и корицу в миске.",
+          "image": "https://your-site.com/img/step2.jpg"
         },
         {
           "@type": "HowToStep",
-          "text": "Добавьте яйца и растопленное сливочное масло, перемешайте до однородности."
+          "name": "Добавьте яйца и масло",
+          "text": "Добавьте яйца и растопленное сливочное масло, перемешайте до однородности.",
+          "image": "https://your-site.com/img/step3.jpg"
         },
         {
           "@type": "HowToStep",
-          "text": "Очистите яблоки, нарежьте их кубиками и добавьте в тесто."
+          "name": "Добавьте яблоки",
+          "text": "Очистите яблоки, нарежьте их кубиками и добавьте в тесто.",
+          "image": "https://your-site.com/img/step4.jpg"
         },
         {
           "@type": "HowToStep",
-          "text": "Выложите тесто в форму для выпечки и выпекайте 45 минут."
+          "name": "Выпекайте пирог",
+          "text": "Выложите тесто в форму для выпечки и выпекайте 45 минут.",
+          "image": "https://your-site.com/img/step5.jpg"
         }
       ]
     }
@@ -84,11 +102,11 @@
         <section class="recipe-page">
             <div class="container">
                 <h1>Пирог с яблоками</h1>
-                <img src="img/recipe1.jpg" alt="Пирог с яблоками">
+                <img src="img/recipe1.jpg" alt="Пирог с яблоками" loading="lazy">
                 <p class="description">Простой и быстрый рецепт пирога с яблоками, который понравится всей семье.</p>
 
                 <div class="recipe-details">
-                    <h2>Ингредиенты</h2>
+                  <h2>Ингредиенты</h2>
                     <ul>
                         <li>2 стакана муки</li>
                         <li>1 стакан сахара</li>
@@ -99,15 +117,53 @@
                         <li>1 ч.л. корицы</li>
                     </ul>
 
-                    <h2>Инструкция</h2>
-                    <ol>
-                        <li>Разогрейте духовку до 180°C.</li>
-                        <li>Смешайте муку, сахар, разрыхлитель и корицу в миске.</li>
-                        <li>Добавьте яйца и растопленное сливочное масло, перемешайте до однородности.</li>
-                        <li>Очистите яблоки, нарежьте их кубиками и добавьте в тесто.</li>
-                        <li>Выложите тесто в форму для выпечки и выпекайте 45 минут.</li>
-                    </ol>
+                    <h2>Пошаговое приготовление</h2>
+                    <div class="recipe-steps">
+                        <div class="step">
+                            <h3>Шаг 1: Разогрейте духовку</h3>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRr16MAaUuYOtyr5o1UJnxgtpkUeN7vSlnVw&s" alt="Разогрейте духовку до 180°C" loading="lazy">
+                            <p>Разогрейте духовку до 180°C.</p>
+                        </div>
+                        <div class="step">
+                            <h3>Шаг 2: Смешайте сухие ингредиенты</h3>
+                            <img src="https://img.povar.ru/mobile/18/5e/c5/34/keto-sharlotka_s_yablokami-752645.JPG" width="259" height="194" alt="Смешайте муку, сахар, разрыхлитель и корицу" loading="lazy">
+                            <p>Смешайте муку, сахар, разрыхлитель и корицу в миске.</p>
+                        </div>
+                        <div class="step">
+                            <h3>Шаг 3: Добавьте яйца и масло</h3>
+                            <img src="https://keto-diets.ru/wp-content/uploads/2020/11/keto-lava-keyk-step-2.jpg" width="259" height="194" alt="Добавьте яйца и масло" loading="lazy">
+                            <p>Добавьте яйца и растопленное сливочное масло, перемешайте до однородности.</p>
+                        </div>
+                        <div class="step">
+                            <h3>Шаг 4: Добавьте яблоки</h3>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxmjLWRIu-rskBfcV971jDCl9C-mNKayrOItB5S8zG2Rk5in8SGYzp8Xnrla7XpjO-EM8&usqp=CAU" width="259" height="194" alt="Нарежьте яблоки и добавьте в тесто" loading="lazy">
+                            <p>Очистите яблоки, нарежьте их кубиками и добавьте в тесто.</p>
+                        </div>
+                        <div class="step">
+                            <h3>Шаг 5: Выпекайте пирог</h3>
+                            <img src="https://cdn.botanichka.ru/wp-content/uploads/2015/11/Sharlotka_05.jpg" width="259" height="194" alt="Выпекайте пирог 45 минут" loading="lazy">
+                            <p>Выложите тесто в форму для выпечки и выпекайте 45 минут.</p>
+                            <div class="step">
+                                <h3>Шаг 6: Подготовка к подаче</h3>
+                                <img src="https://cdn.botanichka.ru/wp-content/uploads/2015/11/Sharlotka_15.jpg" width="259" height="194" alt="Подготовка пирога (шарлотки) к подаче" loading="lazy">
+                                <p>Посыпаем шарлотку через небольшое ситечко сахарной пудрой – он станет наряднее и вкуснее. Затем острым ножиком нарезаем на порции.</p>
+                                <h3>Итог</h3>
+                                <img src="https://cdn.botanichka.ru/wp-content/uploads/2015/11/Sharlotka_18.jpg" width="259" height="194" alt="итоговый вид пирога" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Вкусные Рецепты. Все права защищены.</p>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
